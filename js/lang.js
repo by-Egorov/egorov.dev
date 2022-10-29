@@ -15,7 +15,7 @@ const langArr = {
 	},
 
 	"titleContent": {
-		"ru": "привет мой друг",
-		"en": "hello my freind"
+		"ru": "Новый контент",
+		"en": "New content"
 	}
 }

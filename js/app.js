@@ -4,28 +4,6 @@ const arrowBtn = document.querySelector('.arrow-btn')
 const select = document.querySelector('.change-lang')
 const allLang = ['en', 'ru']
 
-// const langArr = {
-// 	"occupation": {
-// 		"ru": "Фронтенд-разработчик",
-// 		"en": "Front-end developer"
-// 	},
-
-// 	"name": {
-// 		"ru": "Егоров Александр",
-// 		"en": "Egorov Alex"
-// 	},
-
-// 	"press": {
-// 		"ru": "нажмите пробел для прокрутки",
-// 		"en": "press the space to scroll"
-// 	},
-
-// 	"titleContent": {
-// 		"ru": "Привет мой друг",
-// 		"en": "Hello my freind"
-// 	}
-// }
-
 document.addEventListener('keydown', (event) => {
 	event.preventDefault()
 	if (event.code.toLowerCase() === 'space') {
