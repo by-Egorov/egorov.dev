@@ -1,12 +1,12 @@
 const langArr = {
 	"occupation": {
-		"ru": "фронтенд-разработчик",
-		"en": "front-end developer"
+		"ru": "Фронтенд-разработчик",
+		"en": "Front-end developer"
 	},
 
 	"name": {
-		"ru": "егоров александр",
-		"en": "egorov alex"
+		"ru": "Егоров Александр",
+		"en": "Egorov Alex"
 	},
 
 	"press": {
