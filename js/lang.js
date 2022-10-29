@@ -14,8 +14,12 @@ const langArr = {
 		"en": "press the space to scroll"
 	},
 
-	"titleContent": {
-		"ru": "Новый контент",
-		"en": "New content"
+	"experience-title": {
+		"ru": "Мой опыт",
+		"en": "My Experience"
+	},
+	"experience-subtitle": {
+		"ru": "Мои навыки",
+		"en": "My Abilities"
 	}
 }

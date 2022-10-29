@@ -1,4 +1,6 @@
 @import "./nullstyle";
+@import "./variables";
+
 body {
 	font-family: "Source Code Pro", monospace;
 }
@@ -71,13 +73,6 @@ section {
 		transition: all 0.3s ease-in;
 	}
 }
-.content {
-	height: 100vh;
-	background: #010101;
-	color: #c4c4c4;
-	
-	text-align: center;
-}
 
 .change-lang {
 	position: fixed;
@@ -88,4 +83,80 @@ section {
 	background-color: transparent;
 	font-size: 18px;
 }
-
+.content {
+	background: #010101;
+	height: 100vh;
+	width: 100vw;
+	&__experience {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.experience {
+	&__title {
+		text-align: center;
+		line-height: 32px;
+	}
+	&__block {
+		margin-top: 120px;
+		display: flex;
+		
+		&--item {
+			width: 300px;
+			height: 250px;
+			background: #182228;
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			padding: 22px 31px;
+			color: #a19e9e;
+		}
+	}
+	&-lang {
+		&__title {
+			font-size: 17px;
+			letter-spacing: 0.4px;
+			color: red;
+		}
+		&__subtitle {
+			font-size: 12px;
+			color: green;
+		}
+		&__progreesBar {
+			display: flex;
+			flex-direction: column;
+			margin-top: 12px;
+			row-gap: 45px;
+		}
+	}
+	&-tools {
+		&__title {
+			font-size: 17px;
+			letter-spacing: 0.4px;
+			color: red;
+		}
+		&__subtitle {
+			font-size: 12px;
+			color: green;
+		}
+		&__progreesBar {
+			display: flex;
+			flex-direction: column;
+			margin-top: 12px;
+			row-gap: 45px;
+		}
+	}
+}
+.progress {
+	display: flex;
+	justify-content: space-between;
+}
+.lng-experience-title {
+	font-size: 30px;
+	color: $colorTitle;
+}
+.lng-experience-subtitle {
+	font-size: 15px;
+	color: $colorSubTitle;
+}
