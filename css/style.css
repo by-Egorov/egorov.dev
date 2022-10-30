@@ -196,6 +196,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 15px;
 }
 
 .experience__title {
