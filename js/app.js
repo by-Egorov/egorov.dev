@@ -53,3 +53,16 @@ function changeLanguage() {
 }
 
 changeLanguage()
+
+const bars = document.querySelectorAll('');
+console.clear();
+
+setInterval(function(){
+  bars.forEach(function(bar){
+    const getWidth = parseFloat(bar.dataset.progress);
+    
+    for(let i = 0; i < getWidth; i++) {
+      bar.style.width = i + '%';
+    }
+  });
+}, 500);

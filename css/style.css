@@ -234,7 +234,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-  row-gap: 45px;
+  row-gap: 35px;
 }
 .experience-tools__title {
   font-size: 17px;
@@ -249,12 +249,12 @@ section {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-  row-gap: 45px;
+  row-gap: 35px;
 }
 
 .progress {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .lng-experience-title {
@@ -265,4 +265,25 @@ section {
 .lng-experience-subtitle {
   font-size: 15px;
   color: #767676;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+}
+
+progress {
+  margin-top: 6px;
+  height: 3px;
+}
+
+::-webkit-progress-value {
+  background: #ffa97a;
+  box-shadow: 0px 0px 5px #ffa97a;
+}
+
+::-webkit-progress-bar {
+  background: rgba(255, 169, 122, 0.5);
+  box-shadow: 0px 0px 5px rgba(255, 169, 122, 0.5);
+  border-radius: 28px;
 }
