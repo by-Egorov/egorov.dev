@@ -1,3 +1,38 @@
+@media only screen and (max-width: 320px) {
+	.change-lang {
+		font-size: 14px;
+	}
+
+	.holder {
+		overflow: visible;
+	}
+
+	section {
+		padding: 200px 10px;
+		justify-content: start;
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	.arrow-down span {
+		font-size: 10px;
+	}
+
+	.arrow-down i {
+		font-size: 18px;
+	}
+	.content {
+		min-height: 100%;
+		padding: 10px;
+	}
+}
+
 @media only screen and (max-width: 375px) {
 	.change-lang {
 		font-size: 14px;
@@ -18,6 +53,34 @@
 
 	.arrow-down {
 		bottom: 70px;
+	}
+
+	.experience__block {
+		grid-template-columns: 300px;
+		row-gap: 20px;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.change-lang {
+		font-size: 14px;
+	}
+
+	.holder {
+		overflow: visible;
+	}
+
+	section {
+		padding: 200px 10px;
+		justify-content: start;
+	}
+
+	.content {
+		padding-top: 20px;
+	}
+
+	.arrow-down {
+		bottom: 5px;
 	}
 
 	.experience__block {
