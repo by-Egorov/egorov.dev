@@ -26,6 +26,9 @@
 			}
 		}
 	}
+	@include phones {
+		padding-bottom: 100px;
+	}
 }
 .active {
 	border-left: 1px solid $accent-color;
