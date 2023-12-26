@@ -1,0 +1,27 @@
+@import '../../variable';
+@import '../../mixin';
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: $color-text;
+	height: 30px;
+	padding: 5px;
+
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		&_item{
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+	}
+
+	@include phones {
+		font-size: 11px;
+	}
+}

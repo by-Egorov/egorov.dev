@@ -1,0 +1,29 @@
+@import '../../variable';
+@import '../../mixin';
+
+.tabs {
+	background-color: $bg-tabs;
+	width: calc(100vw - 230px);
+	height: 40px;
+	display: flex;
+	align-items: center;
+	color: $color-text;
+
+	&__item {
+		display: flex;
+		gap: 5px;
+		padding: 9px 15px;
+		border: 1px solid $bg-tabs;
+		background-color: $tab-bg;
+		&_active {
+			border: none;
+			border-top: 1px solid $accent-color;
+			background: $bg-content;
+		}
+	}
+	@include phones {
+		display: flex;
+		width: 90vw;
+		overflow-x: auto;
+	}
+}

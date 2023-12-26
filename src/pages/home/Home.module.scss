@@ -1,0 +1,115 @@
+@import '../../variable';
+@import '../../mixin';
+
+.home {
+	padding: 2rem;
+	color: $color-text;
+	flex: 1 1;
+	height: 85vh;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 75vh;
+		position: relative;
+		&_background {
+			position: absolute;
+			color: #313340;
+			font-size: 5rem;
+			font-weight: 900;
+			font-family: Montserrat;
+			line-height: 1.1;
+			@include phones {
+				display: none;
+			}
+		}
+		&_content {
+			display: flex;
+			flex-direction: column;
+			gap: 45px;
+			z-index: 2;
+			&_titles {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+			&_title {
+				font-size: 56px;
+				@include phones {
+					font-size: 30px;
+				}
+			}
+			&_subtitle {
+				overflow: hidden;
+				border-right: 0.15em solid $accent-color;
+				white-space: nowrap;
+				font-size: 24px;
+				color: $color-text;
+				animation: typing 3s steps(20, end) forwards, blinking 0.85s infinite;
+				width: 0;
+
+				@include phones {
+					font-size: 16px;
+				}
+			}
+			&_button {
+				&_btn {
+					font-size: 1.25rem;
+					padding: 0.5rem 1rem;
+					color: $color-text;
+					cursor: pointer;
+					margin-right: 1.5rem;
+					font-weight: 600;
+					border: none;
+					&:hover {
+						box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+					}
+					@include phones {
+						padding: 0.4rem 0.6rem;
+					}
+				}
+			}
+		}
+		&_image {
+			z-index: 2;
+			& svg {
+				color: $accent-color;
+				@include phones {
+					width: 320px;
+					height: 320px;
+				}
+			}
+		}
+		@include phones {
+			flex-direction: column;
+		}
+	}
+	.button_inline {
+		background: $accent-color;
+	}
+	.button_outline {
+		background: transparent;
+		border: 2px solid $accent-color;
+	}
+	.text_animated {
+		width: max-content;
+	}
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+		to {
+			width: 100%;
+		}
+	}
+	@keyframes blinking {
+		from {
+			border-color: transparent;
+		}
+		to {
+			border-color: $accent-color;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+@import '../../variable';
+@import '../../mixin';
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	background-color: $bg-main;
+	height: 30px;
+	padding: 0 0.5rem;
+	border-bottom: 1px solid $bg-tabs;
+	color: $color-text;
+	
+	&__left_fake_menu {
+		flex: 1 1;
+		margin-right: auto;
+		margin-left: 5px;
+		display: flex;
+		gap: 15px;
+		font-size: 14px;
+
+		@include phones {
+		display: none;
+		}
+	}
+	&__right_fake_menu {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex: 1 1;
+		margin-left: auto;
+		gap: 8px;
+		font-size: 14px;
+		&_circle {
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+		}
+	}
+
+	@include phones {
+		gap: 10px;
+	}
+}
+.orange {
+	background-color: orange;
+}
+.green {
+	background-color: green;
+}
+.red {
+	background-color: red;
+}
