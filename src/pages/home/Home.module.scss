@@ -71,6 +71,9 @@
 					}
 				}
 			}
+			@include phones {
+				z-index: 0;
+			}
 		}
 		&_image {
 			z-index: 2;
