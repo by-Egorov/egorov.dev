@@ -22,6 +22,9 @@
 		@include phones {
 		display: none;
 		}
+		@include tablets {
+		display: none;
+		}
 	}
 	&__right_fake_menu {
 		display: flex;

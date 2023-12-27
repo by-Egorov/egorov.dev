@@ -23,7 +23,7 @@ const SideBar = () => {
 								: style.sidebar__icons_item
 						}
 					>
-						<Link to='/home'>
+						<Link to='/'>
 							<VscFiles size={25} />
 						</Link>
 					</div>

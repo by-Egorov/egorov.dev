@@ -17,12 +17,8 @@ function App() {
 			<div className='main'>
 				<Header />
 				<div className='main__body'>
-					<div className='sideBar'>
 						<SideBar />
-					</div>
-					<div className='explorer'>
 						<Explorer />
-					</div>
 					<div className='content'>
 						<Tabs />
 						<div className='content__body'>
@@ -38,9 +34,7 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<footer className='footer'>
 				<Footer />
-			</footer>
 		</Router>
 	)
 }

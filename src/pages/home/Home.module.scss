@@ -25,6 +25,9 @@
 			@include phones {
 				display: none;
 			}
+			@include tablets {
+				display: none;
+			}
 		}
 		&_content {
 			display: flex;
@@ -40,6 +43,9 @@
 				font-size: 56px;
 				@include phones {
 					font-size: 30px;
+				}
+				@include tablets {
+					font-size: 45px;
 				}
 			}
 			&_subtitle {
@@ -93,6 +99,10 @@
 		@include phones {
 			flex-direction: column;
 			justify-content: space-around;
+		}
+		@include tablets {
+		align-items: start;
+		flex-direction: column;		
 		}
 	}
 	.button_inline {

@@ -26,4 +26,10 @@
 		width: 90vw;
 		overflow-x: auto;
 	}
+	@include tablets {
+		display: flex;
+		width: calc(94vw - 230px);
+		overflow-x: auto;
+	}
+	
 }

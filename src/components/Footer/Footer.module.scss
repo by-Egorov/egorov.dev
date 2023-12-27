@@ -8,6 +8,11 @@
 	color: $color-text;
 	height: 30px;
 	padding: 5px;
+	width: 100vw;
+	background: $footer-bg;
+	position: fixed;
+	left: 0;
+	bottom: 0;
 
 	&__info {
 		display: flex;

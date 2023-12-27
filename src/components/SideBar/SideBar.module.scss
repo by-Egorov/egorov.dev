@@ -9,6 +9,9 @@
 	justify-content: space-between;
 	height: 100%;
 	padding-bottom: 60px;
+	width: 60px;
+	background-color: $bg-sideBar;
+	padding-bottom: 10px;
 
 	&__icons {
 		width: 100%;
@@ -28,11 +31,18 @@
 		@include phones {
 			gap: 10px;
 		}
+		@include tablets {
+			gap: 10px;
+		}
 	}
 	@include phones {
 		padding-bottom: 0;
 		height: 80vh;
 		overflow: hidden;
+	}
+	@include tablets {
+		padding-bottom: 90px;
+		height: 100vh;
 	}
 }
 .active {

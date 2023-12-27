@@ -25,25 +25,15 @@ a {
 		overflow: hidden;
 		font-size: 12px;
 	}
+	@include tablets {
+		height: 95vh;
+		overflow: hidden;
+	}
 }
 .main {
 	&__body {
 		display: flex;
 		height: 100vh;
-	}
-}
-
-.sideBar {
-	width: 60px;
-	background-color: $bg-sideBar;
-	padding-bottom: 10px;
-}
-.explorer {
-	min-width: 275px;
-	background-color: $bg-explorer;
-
-	@include phones {
-		display: none;
 	}
 }
 .content {
@@ -53,10 +43,4 @@ a {
 		background: $bg-content;
 	}
 }
-.footer {
-	width: 100vw;
-	background: $footer-bg;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-}
+
