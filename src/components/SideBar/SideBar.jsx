@@ -18,7 +18,7 @@ const SideBar = () => {
 				<div className={style.sidebar__icons}>
 					<div
 						className={
-							isLinkActive('/home')
+							isLinkActive('/')
 								? ` ${style.sidebar__icons_item} ${style.active}`
 								: style.sidebar__icons_item
 						}

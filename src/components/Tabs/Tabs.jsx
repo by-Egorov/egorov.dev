@@ -17,7 +17,7 @@ const Tabs = ({ customStyleTabs, customStyleItem }) => {
 	)
 	const location = useLocation()
 
-	const [active, setActive] = useState('home')
+	const [active, setActive] = useState('/')
 	const isLinkActive = path => location.pathname === path
 	const handleLinkClick = path => {
 		setActive(path)
@@ -26,9 +26,9 @@ const Tabs = ({ customStyleTabs, customStyleItem }) => {
 	return (
 		<div className={tabsClasses}>
 			<Link
-				to='/home'
-				className={isLinkActive('/home') ? activeClasses : tabsItemClasses}
-				onClick={() => handleLinkClick('/home')}
+				to='/'
+				className={isLinkActive('/') ? activeClasses : tabsItemClasses}
+				onClick={() => handleLinkClick('/')}
 			>
 				<img src={jsx} alt='' />
 				home.jsx

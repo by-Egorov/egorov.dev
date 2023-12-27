@@ -27,7 +27,7 @@ function App() {
 						<Tabs />
 						<div className='content__body'>
 							<Routes>
-								<Route path='/home' element={<Home />} />
+								<Route path='/' element={<Home />} />
 								<Route path='/about' element={<About />} />
 								<Route path='/projects' element={<Projects />} />
 								<Route path='/skills' element={<Skills />} />
