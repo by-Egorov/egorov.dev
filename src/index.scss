@@ -19,6 +19,12 @@ a {
 	height: 100vh;
 	overflow: hidden;
 	font-size: 14.5px;
+
+	@include phones {
+		height: 90vh;
+		overflow: hidden;
+		font-size: 12px;
+	}
 }
 .main {
 	&__body {

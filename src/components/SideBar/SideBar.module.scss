@@ -25,9 +25,14 @@
 				color: #3c3d51;
 			}
 		}
+		@include phones {
+			gap: 10px;
+		}
 	}
 	@include phones {
-		padding-bottom: 100px;
+		padding-bottom: 0;
+		height: 80vh;
+		overflow: hidden;
 	}
 }
 .active {
