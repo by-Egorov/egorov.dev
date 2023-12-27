@@ -1,0 +1,80 @@
+@import '../../variable';
+@import '../../mixin';
+
+.form {
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	gap: 15px;
+	&__inputs {
+		display: flex;
+		align-items: flex-end;
+		gap: 20px;
+
+		&_input {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			& label {
+				font-size: 14.4px;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				color: $color-text;
+				text-transform: uppercase;
+			}
+
+			& input {
+				width: 100%;
+				border: none;
+				outline: none;
+				padding: 10px;
+				color: $color-text;
+				background: $bg-main;
+			}
+		}
+	}
+	&__textArea {
+		width: 85%;
+		min-height: 200px;
+		padding: 10px;
+		border: none;
+		outline: none;
+		resize: none;
+		color: $color-text;
+		background: $bg-main;
+	}
+	&__button {
+		// padding: 0 15px;
+		& button {
+			font-size: 14.5px;
+			font-weight: 600;
+			padding: 0.5rem 1rem;
+			color: $color-text;
+			cursor: pointer;
+			margin-right: 1.5rem;
+			background: $accent-color;
+			text-transform: uppercase;
+			border: none;
+			&:hover {
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+}
+
+.err {
+	font-size: 16px;
+	color: red;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.messageOk {
+	display: flex;
+	align-items: center;
+	& svg {
+		color: green;
+	}
+}
