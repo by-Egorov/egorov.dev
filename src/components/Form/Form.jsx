@@ -16,7 +16,7 @@ const Form = () => {
 		setIsSendMessage(true)
 		setTimeout(() => {
 			setIsSendMessage(false)
-		}, 2000)
+		}, 3000)
 	}
 	const submitFormToGoogleForms = async data => {
 		const date = new Date()
@@ -59,6 +59,7 @@ const Form = () => {
 return (
 <>
 <form className={style.form}>
+<h3>Or Fill Out This Form</h3>
 					<div className={style.form__inputs}>
 						<div className={style.form__inputs_input}>
 							<label>Name</label>
@@ -89,12 +90,6 @@ return (
 								<p className={style.err}>Введите корректный email</p>
 							)}
 						</div>
-						{isSendMessage && (
-							<div className={style.messageOk}>
-								<VscPassFilled size={35} />
-								сообщение отправлено
-							</div>
-						)}
 					</div>
 					<div className={style.form__inputs_input}>
 						<label> Message </label>
@@ -112,6 +107,12 @@ return (
 						<button onClick={handleSubmit(submitFormToGoogleForms)}>
 							Submit
 						</button>
+						{isSendMessage && (
+							<div className={style.messageOk}>
+								<VscPassFilled size={35} />
+								сообщение отправлено
+							</div>
+						)}
 					</div>
 				</form>
 </>

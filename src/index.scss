@@ -16,18 +16,15 @@ a {
 
 #root {
 	font-family: $font-family-jb;
-	height: 100vh;
+	height: calc(100vh - 30px);
 	overflow: hidden;
 	font-size: 14.5px;
 
 	@include phones {
-		height: 90vh;
+		height: 100vh;
+		margin-bottom: 30px;
 		overflow: hidden;
 		font-size: 12px;
-	}
-	@include tablets {
-		height: 95vh;
-		overflow: hidden;
 	}
 }
 .main {

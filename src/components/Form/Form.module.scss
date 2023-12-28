@@ -4,8 +4,9 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	padding-top: 50px;
 	gap: 15px;
+
+
 	&__inputs {
 		display: flex;
 		align-items: flex-end;
@@ -44,10 +45,15 @@
 		resize: none;
 		color: $color-text;
 		background: $bg-main;
+
+		@include phones {
+			width: 100%;
+		}
 	}
 	&__button {
-		// padding: 0 15px;
+		display: flex;
 		& button {
+			
 			font-size: 14.5px;
 			font-weight: 600;
 			padding: 0.5rem 1rem;
@@ -62,6 +68,9 @@
 			}
 		}
 	}
+	@include phones {
+		border: none;
+	}
 }
 
 .err {
@@ -74,6 +83,7 @@
 .messageOk {
 	display: flex;
 	align-items: center;
+	gap: 5px;
 	& svg {
 		color: green;
 	}

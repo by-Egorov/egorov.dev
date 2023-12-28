@@ -23,12 +23,7 @@
 	}
 	@include phones {
 		display: flex;
-		width: 90vw;
-		overflow-x: auto;
-	}
-	@include tablets {
-		display: flex;
-		width: calc(94vw - 230px);
+		width: calc(100vw - 50px);
 		overflow-x: auto;
 	}
 	

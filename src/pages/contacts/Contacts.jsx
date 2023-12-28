@@ -5,11 +5,10 @@ const Contacts = () => {
 	return (
 		<div className={style.contacts}>
 			<div className={style.contacts__wrapper}>
-				<h3> Reach Out Via Socials </h3>
 				<Social/>
 			</div>
+			<div className={style.border}></div>
 			<div className={style.contacts__wrapper}>
-				<h3>Or Fill Out This Form</h3>
 				<Form/>
 			</div>
 		</div>

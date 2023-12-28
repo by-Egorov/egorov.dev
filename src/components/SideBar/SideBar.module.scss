@@ -4,14 +4,12 @@
 .sidebar {
 	color: rgb(106, 115, 125);
 	display: flex;
+	height: calc(100vh - 60px);
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 100%;
-	padding-bottom: 60px;
 	width: 60px;
 	background-color: $bg-sideBar;
-	padding-bottom: 10px;
 
 	&__icons {
 		width: 100%;
@@ -19,8 +17,8 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding-top: 25px;
-		gap: 15px;
+		padding-top: 10px;
+		gap: 10px;
 		cursor: pointer;
 		&_item {
 			padding: 5px;
@@ -31,18 +29,12 @@
 		@include phones {
 			gap: 10px;
 		}
-		@include tablets {
-			gap: 10px;
-		}
 	}
 	@include phones {
-		padding-bottom: 0;
-		height: 80vh;
+		max-width: 50px;
+		min-width: 50px;
 		overflow: hidden;
-	}
-	@include tablets {
-		padding-bottom: 90px;
-		height: 100vh;
+		height: calc(100vh - 30px);
 	}
 }
 .active {

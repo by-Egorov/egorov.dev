@@ -1,0 +1,40 @@
+@import '../../mixin';
+@import '../../variable';
+
+.social {
+	font-size: 19px;
+	&__list {
+		list-style-type: none;
+		counter-reset: my-counter;
+		padding-top: 25px;
+		margin: 0;
+		&_item {
+			position: relative;
+			counter-increment: my-counter;
+			padding-left: 20px;
+			margin-bottom: 8px;
+			&:not(:first-child):not(:last-child) {
+				padding-left: 40px;
+			}
+			&:before {
+				content: counter(my-counter);
+				position: absolute;
+				left: 0;
+				font-size: 19px;
+				color: #fff;
+				@include phones {
+					font-size: 14px;
+				}
+			}
+			&_link {
+				color: $accent-color;
+			}
+		}
+		& span {
+			color: $accent-color;
+		}
+	}
+	@include phones {
+		font-size: 14px;
+	}
+}
