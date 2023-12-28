@@ -25,6 +25,9 @@
 			@include phones {
 				display: none;
 			}
+			@include tablets {
+				display: none;
+			}
 		}
 		&_content {
 			display: flex;
@@ -35,6 +38,7 @@
 				display: flex;
 				flex-direction: column;
 				gap: 10px;
+				
 			}
 			&_title {
 				font-size: 56px;
@@ -42,7 +46,7 @@
 					font-size: 30px;
 				}
 				@include tablets {
-					font-size: 45px;
+					font-size: 35px;
 				}
 			}
 			&_subtitle {
@@ -79,6 +83,7 @@
 			@include phones {
 				gap: 30px;
 			}
+		
 		}
 		&_image {
 			z-index: 2;
@@ -92,10 +97,17 @@
 			@include phones {
 				z-index: 0;
 			}
+			@include tablets {
+				display: none;
+			}
 		}
 		@include phones {
 			flex-direction: column;
 			padding: 0;
+		}
+		@include tablets {
+			height: 50vh;
+			justify-content: center;
 		}
 	}
 	.button_inline {

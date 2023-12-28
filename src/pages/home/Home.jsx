@@ -13,7 +13,7 @@ const Home = () => {
 				<div className={style.home__body_content_title}>Egorov Aleksandr</div>
 					<div className={style.text_animated}>
 						<div className={style.home__body_content_subtitle}>
-							Junior frontend developer.
+							Junior frontend developer
 						</div>
 					</div>
 				</div>

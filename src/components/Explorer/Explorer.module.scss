@@ -39,9 +39,6 @@
 		padding-left: 10px;
 		font-size: 14px;
 		
-		@include tablets {
-			height: 100%;
-		}
 	}
 	&__item {
 		width: 100%;
@@ -56,8 +53,5 @@
 	}
 	@include phones {
 		display: none;
-	}
-	@include tablets {
-		min-width: 250px;
 	}
 }
