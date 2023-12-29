@@ -1,2 +1,102 @@
 @import '../../variable';
 @import '../../mixin';
+
+.project {
+	font-size: 16px;
+	color: $color-text;
+	padding: 15px;
+
+	&__cards {
+		display: flex;
+		gap: 25px;
+		@include phones {
+			flex-direction: column;
+		}
+		@include phones {
+			overflow: auto;
+		}
+	}
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	background: $card-bg;
+	border-radius: 20px;
+	cursor: pointer;
+	width: 345px;
+	overflow: hidden;
+	&__preview {
+		height: 172px;
+		border-radius: 20px;
+		padding: 5px;
+		overflow: hidden;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		padding: 15px;
+
+		&_technologies {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			&_item {
+				font-size: 12px;
+				padding: 5px;
+				border: 1px solid;
+				border-radius: 30px;
+			}
+		}
+		&_links {
+			display: flex;
+			gap: 20px;
+
+			&_github {
+				border-bottom: 3px solid $accent-color;
+			}
+			&_visit {
+				border-bottom: 3px solid $accent-color;
+			}
+		}
+	}
+	&__timer {
+		.card__preview {
+			background-color: #6c3fc9;
+		}
+	}
+	&__mycar {
+		.card__preview {
+			background-color: #959a9f;
+		}
+	}
+	@include phones {
+		flex-direction: column;
+		width: 303px;
+	}
+}
+
+.item_react {
+	border-color: $react_color;
+}
+.item_scss {
+	border-color: $scss_color;
+}
+.item_node {
+	border-color: $node_color;
+}
+.item_mongodb {
+	border-color: $mongodb_color;
+}
+.item_redux {
+	border-color: $redux_color;
+}
+.item_axios {
+	border-color: $axios_color;
+}
