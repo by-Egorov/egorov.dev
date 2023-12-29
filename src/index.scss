@@ -16,12 +16,12 @@ a {
 
 #root {
 	font-family: $font-family-jb;
-	height: 100%;
+	height: max-content;
 	overflow: hidden;
 	font-size: 14.5px;
 
 	@include phones {
-		overflow: auto;
+		overflow: 100%;
 		font-size: 12px;
 	}
 }
