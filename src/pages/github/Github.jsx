@@ -1,7 +1,8 @@
+import style from './Github.module.scss'
 const Github = () => {
 return (
-<div>
-github
+<div className={style.github}>
+Пока ничего нет
 </div>
 )
 }

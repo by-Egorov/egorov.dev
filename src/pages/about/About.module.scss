@@ -1,2 +1,19 @@
 @import '../../variable';
 @import '../../mixin';
+
+.about {
+	color: $color-text;
+	font-family: $font-family-sc;
+	height: 100vh;
+	font-size: 16px;
+	padding: 5px;
+	& h3 {
+		font-family: $font-family-jb;
+	}
+	& p {
+		margin: 20px;
+	}
+& i {
+	color: $accent-color;
+}
+}

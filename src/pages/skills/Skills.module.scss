@@ -1,0 +1,30 @@
+@import '../../variable';
+@import '../../mixin';
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	height: 100vh;
+	color: $color-text;
+	padding: 10px;
+
+	&__skill {
+		display: flex;
+		justify-content: content;
+		align-items: center;
+		gap: 40px;
+		width: 75px;
+		height: 75px;
+
+		& img {
+			width: 75px;
+			height: 75px;
+		}
+		&_progress {
+			min-width: 100px;
+			min-height: 15px;
+		}
+	}
+}
+

@@ -1,2 +1,11 @@
 @import '../../variable';
 @import '../../mixin';
+
+.github {
+	font-family: $font-family-sc;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	color: $color-text;
+}

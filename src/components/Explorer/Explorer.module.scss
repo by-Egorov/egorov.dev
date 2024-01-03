@@ -8,6 +8,7 @@
 	padding: 15px;
 	min-width: 275px;
 	background-color: $bg-explorer;
+	min-height: calc(100vh - 60px);
 	
 	&__title {
 		font-size: 16px;

@@ -9,6 +9,8 @@
 	justify-content: space-between;
 	width: 60px;
 	background-color: $bg-sideBar;
+	min-height: calc(100vh - 60px);
+	padding-bottom: 30px;
 
 	&__icons {
 		width: 100%;

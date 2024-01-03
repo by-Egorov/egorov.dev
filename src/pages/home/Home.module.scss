@@ -5,7 +5,7 @@
 	padding-top: 25px;
 	color: $color-text;
 	flex: 1 1;
-	height: 85vh;
+	height: calc(100vh - 60px);
 	overflow-y: auto;
 	scroll-behavior: smooth;
 
@@ -25,9 +25,7 @@
 			@include phones {
 				display: none;
 			}
-			@include tablets {
-				display: none;
-			}
+			
 		}
 		&_content {
 			display: flex;
@@ -97,17 +95,10 @@
 			@include phones {
 				z-index: 0;
 			}
-			@include tablets {
-				display: none;
-			}
 		}
 		@include phones {
 			flex-direction: column;
 			padding: 0;
-		}
-		@include tablets {
-			height: 50vh;
-			justify-content: center;
 		}
 	}
 	.button_inline {

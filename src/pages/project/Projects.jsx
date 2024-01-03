@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import style from './Projects.module.scss'
 import timerPreview from '../../assets/timer-icon.png'
 import myCarPreview from '../../assets/mycar-icon.png'
@@ -9,7 +8,7 @@ import Card from '../../components/Card/Card'
 const Projects = () => {
 	return (
 		<div className={style.project}>
-			<h3>Stuff I've Built So Far</h3>
+			<h3>Stuff I`ve Built So Far</h3>
 			<div className={style.project__cards}>
 				<Card
 					customStyle={style.timer_prev_bg}
@@ -161,6 +160,7 @@ const Projects = () => {
 						</>
 					}
 				/>
+	
 			</div>
 		</div>
 	)
